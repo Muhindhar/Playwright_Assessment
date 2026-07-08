@@ -3,13 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
- "scripts": {
-  "test": "cucumber-js --format json:reports/cucumber-report.json && tsx src/utilities/report.ts"
-},
+  "type": "commonjs",
+  "scripts": {
+    "test": "cucumber-js --format json:reports/cucumber-report.json",
+    "report": "tsx src/utilities/report.ts"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
   "devDependencies": {
     "@cucumber/cucumber": "^13.0.0",
     "@playwright/test": "^1.61.1",
