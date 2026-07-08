@@ -18,7 +18,7 @@ Feature Description: As a new user i want to Register to the site and launch to 
 
         Examples:
                   | gender | firstname | lastname | email                        | password | conpassword |
-                  | Male   | muhindhar | sv       | muhidemouser781227@gmail.com | muhi2701 | muhi2701    |
+                  | Male   | muhindhar | sv       | muhidemouser7812277@gmail.com | muhi2701 | muhi2701    |
 
 
 
