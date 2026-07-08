@@ -13,7 +13,7 @@ export class Registerpage extends BasePage{
     private password = this.page.getByRole('textbox', { name: 'Password:', exact: true });
     private conpassword = this.page.getByRole('textbox', { name: 'Confirm password:' });
     private regbtn = this.page.getByRole('button', { name: 'Register' })
-    private regdone = this.page.locator("//div[@class='result']")
+    private regdone =this.page.locator(".result")
     
     async navigate(){
         await this.page.goto(process.env.base_url!)
@@ -43,6 +43,7 @@ export class Registerpage extends BasePage{
         await this.click(this.regbtn);
     }
     async checklogin(){
+        await this.regdone.waitFor({ state: "visible" });
         return await this.getText(this.regdone)
     }
 

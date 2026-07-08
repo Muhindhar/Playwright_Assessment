@@ -29,7 +29,7 @@ When('user clicks on the login button', async function (this:muhiworld) {
 Then('user should see the corresponding messages', async function (this:muhiworld) {
   // Write code here that turns the phrase above into concrete actions
     if (loginDetails.type === "valid") {
-    expect(await this.login.successmsg()).toContain("MUHISV27@GMAIL.COM");
+    expect(await this.dashboard.successmsg()).toContain("MUHISV27@GMAIL.COM");
 }
     else if(loginDetails.type==="invalidpass"){
         expect(await this.login.errormsg()).toContain("Login was unsuccessful. Please correct the errors and try again."

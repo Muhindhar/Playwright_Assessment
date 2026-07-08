@@ -3,6 +3,7 @@ import { chromium, Browser } from '@playwright/test'
 import { muhiworld } from '../world/customworld';
 import { Registerpage } from '../page/registerpage';
 import { LoginPage } from '../page/loginpage';
+import { DashboardPage } from "../page/dashboardpage";
 
 let browser: Browser;
 setDefaultTimeout(60*1000)
@@ -16,6 +17,7 @@ Before(async function(this: muhiworld, scenario) {
     this.page = await this.context.newPage();
     this.register = new Registerpage(this.page)
     this.login = new LoginPage(this.page)
+    this.dashboard = new DashboardPage(this.page)
 });
 
 After(async function (this: muhiworld, scenario) {

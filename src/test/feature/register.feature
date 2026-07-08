@@ -17,8 +17,8 @@ Feature Description: As a new user i want to Register to the site and launch to 
              Then  user should be able to login successfully
 
         Examples:
-                  | gender | firstname | lastname | email                             | password | conpassword |
-                  | Male   | muhindhar | sv       | muhidemouser12443546478@gmail.com | muhi2701 | muhi2701    |
+                  | gender | firstname | lastname | email                        | password | conpassword |
+                  | Male   | muhindhar | sv       | muhidemouser781227@gmail.com | muhi2701 | muhi2701    |
 
 
 
